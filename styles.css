@@ -125,6 +125,7 @@ body {
 .movie--isloading .loading-content .loading-text-container {
   -ms-flex-preferred-size: 100%;
   flex-basis: 100%;
+  text-align: center;
 }
 
 .movie--isloading .loading-content .loading-main-text {
@@ -144,28 +145,8 @@ body {
   width: 60px;
   height: 25px;
   background: #1163ff;
-  background-image: -webkit-linear-gradient(
-    left,
-    #1163ff 0px,
-    #4e8cff 40px,
-    #1163ff 80px
-  );
-  background-image: -o-linear-gradient(
-    left,
-    #1163ff 0px,
-    #4e8cff 40px,
-    #1163ff 80px
-  );
-  background-image: linear-gradient(
-    90deg,
-    #1163ff 0px,
-    #4e8cff 40px,
-    #1163ff 80px
-  );
   background-size: 250px;
   border-radius: 3px;
-  -webkit-animation: shine-loading-container-items 2s infinite ease-out;
-  animation: shine-loading-container-items 2s infinite ease-out;
 }
 
 @-webkit-keyframes shine-loading-image {
