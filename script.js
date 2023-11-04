@@ -19,16 +19,24 @@ document.addEventListener("DOMContentLoaded", function () {
     if (data) {
       const qrCodeImage = document.querySelector("#qrcode img");
       if (qrCodeImage) {
-        const downloadLink = document.createElement("a");
-        downloadLink.href = qrCodeImage.src;
-        downloadLink.download = "qrcode.png"; // You can set the filename as you like
-        downloadLink.style.display = "none";
+        const canvas = document.createElement("canvas");
+        const context = canvas.getContext("2d");
 
-        document.body.appendChild(downloadLink);
-        downloadLink.click();
+        canvas.width = qrCodeImage.width;
+        canvas.height = qrCodeImage.height;
+        context.drawImage(qrCodeImage, 0, 0);
 
-        // Remove the download link after the download is initiated
-        document.body.removeChild(downloadLink);
+        // Convert the QR code image to a data URL
+        const dataURL = canvas.toDataURL("image/png");
+
+        // Create a download link for the QR code image
+        const a = document.createElement("a");
+        a.href = dataURL;
+        a.download = "qrcode.png"; // You can set the filename as you like
+        a.style.display = "none";
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
       }
     }
   });
