@@ -34,21 +34,29 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     const dataURL = qrCodeImage.src;
-    const imageUrl = dataURL;
+    const imageBlob = dataURLToBlob(dataURL);
 
-    fetch(imageUrl)
-      .then((response) => response.blob())
-      .then((blob) => {
-        const url = window.URL.createObjectURL(blob);
+    const url = window.URL.createObjectURL(imageBlob);
 
-        // Create a download link for the QR code image
-        const a = document.createElement("a");
-        a.href = url;
-        a.download = "qr-code.png"; // You can set the filename as you like
-        a.style.display = "none";
-        document.body.appendChild(a);
-        a.click();
-        window.URL.revokeObjectURL(url);
-      });
+    // Create a download link for the QR code image
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = "qr-code.png"; // You can set the filename as you like
+    a.style.display = "none";
+    document.body.appendChild(a);
+    a.click();
+    window.URL.revokeObjectURL(url);
   });
+
+  function dataURLToBlob(dataURL) {
+    const parts = dataURL.split(";base64,");
+    const contentType = parts[0].replace("data:", "");
+    const rawData = window.atob(parts[1]);
+    const rawDataLength = rawData.length;
+    const bytes = new Uint8Array(rawDataLength);
+    for (let i = 0; i < rawDataLength; i++) {
+      bytes[i] = rawData.charCodeAt(i);
+    }
+    return new Blob([bytes], { type: contentType });
+  }
 });
