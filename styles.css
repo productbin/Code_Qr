@@ -71,7 +71,7 @@ body {
 }
 
 .movie--isloading {
-  height: 300px;
+  height: 350px;
   width: 300px;
   border-radius: 4px;
   overflow: hidden;
@@ -79,8 +79,7 @@ body {
 }
 
 .movie--isloading .loading-image {
-  height: 100%;
-  width: 100%;
+  height: 300px;
   background-image: -webkit-linear-gradient(
     left,
     #ececec 0px,
@@ -129,83 +128,39 @@ body {
 }
 
 .movie--isloading .loading-content .loading-main-text {
-  height: 10px;
+  height: 14px;
   width: 65%;
   margin-bottom: 10px;
   background: #ececec;
-  background-image: -webkit-linear-gradient(
-    left,
-    #ececec 0px,
-    #ddd 40px,
-    #ececec 80px
-  );
-  background-image: -o-linear-gradient(
-    left,
-    #ececec 0px,
-    #ddd 40px,
-    #ececec 80px
-  );
-  background-image: linear-gradient(
-    90deg,
-    #ececec 0px,
-    #ddd 40px,
-    #ececec 80px
-  );
-  background-size: 250px;
-  border-radius: 10px;
-  -webkit-animation: shine-loading-container-items 2s infinite ease-out;
-  animation: shine-loading-container-items 2s infinite ease-out;
-}
-
-.movie--isloading .loading-content .loading-sub-text {
-  height: 10px;
-  width: 50%;
-  background: #ececec;
-  background-image: -webkit-linear-gradient(
-    left,
-    #ececec 0px,
-    #ddd 40px,
-    #ececec 80px
-  );
-  background-image: -o-linear-gradient(
-    left,
-    #ececec 0px,
-    #ddd 40px,
-    #ececec 80px
-  );
-  background-image: linear-gradient(
-    90deg,
-    #ececec 0px,
-    #ddd 40px,
-    #ececec 80px
-  );
-  background-size: 250px;
-  border-radius: 10px;
-  -webkit-animation: shine-loading-container-items 2s infinite ease-out;
-  animation: shine-loading-container-items 2s infinite ease-out;
+  font-family: monospace;
+  font-size: 10px;
 }
 
 .movie--isloading .loading-content .loading-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   width: 60px;
   height: 25px;
-  background: #ececec;
+  background: #1163ff;
   background-image: -webkit-linear-gradient(
     left,
-    #ececec 0px,
-    #ddd 40px,
-    #ececec 80px
+    #1163ff 0px,
+    #4e8cff 40px,
+    #1163ff 80px
   );
   background-image: -o-linear-gradient(
     left,
-    #ececec 0px,
-    #ddd 40px,
-    #ececec 80px
+    #1163ff 0px,
+    #4e8cff 40px,
+    #1163ff 80px
   );
   background-image: linear-gradient(
     90deg,
-    #ececec 0px,
-    #ddd 40px,
-    #ececec 80px
+    #1163ff 0px,
+    #4e8cff 40px,
+    #1163ff 80px
   );
   background-size: 250px;
   border-radius: 3px;

@@ -17,15 +17,39 @@
           <div id="qrcode" class="loading-image"></div>
           <div class="loading-content">
             <div class="loading-text-container">
-              <div class="loading-main-text"></div>
+              <div class="loading-main-text">Qr will generate here</div>
             </div>
-            <div class="loading-btn"></div>
+            <div id="save-qr" class="loading-btn">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+                role="img"
+                width="20px"
+                height="20px"
+                preserveAspectRatio="xMidYMid meet"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="none"
+                  stroke="#ffff"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 15V3m0 12l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 0 0 4.561 21h14.878a2 2 0 0 0 1.94-1.515L22 17"
+                ></path>
+              </svg>
+            </div>
           </div>
         </div>
       </div>
       <div class="input-group">
-        <label for="qr-data" class="label">Enter the Data</label>
-        <input id="qr-data" autocomplete="off" type="text" class="input" />
+        <input
+          placeholder="type here"
+          id="qr-data"
+          autocomplete="off"
+          type="text"
+          class="input"
+        />
         <div></div>
       </div>
       <button id="generate-qr" class="btn">Generate</button>
