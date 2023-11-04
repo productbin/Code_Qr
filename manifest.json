@@ -2,11 +2,11 @@
   "display_override": ["window-controls-overlay"],
   "protocol_handlers": [{ "protocol": "mailto", "url": "/newEmail?to=%s" }],
   "name": "Qrgen",
-  "short_name": "This name will show in your Windows taskbar, in the start menu, and Android homescreen",
-  "start_url": "The URL that should be loaded when your application is opened",
+  "short_name": "QRGen",
+  "start_url": "/",
   "display": "standalone",
-  "description": "A description for your application",
-  "lang": " The default language of your application",
+  "description": "Generate QR codes easily",
+  "lang": "en",
   "dir": "auto",
   "theme_color": "#000000",
   "background_color": "#000000",
@@ -42,9 +42,9 @@
   "prefer_related_applications": false,
   "shortcuts": [
     {
-      "name": "The name you would like to be displayed for your shortcut",
-      "url": "The url you would like to open when the user chooses this shortcut. This must be a URL local to your PWA. For example: If my start_url is /, this URL must be something like /shortcut",
-      "description": "A description of the functionality of this shortcut"
+      "name": "QRGen Shortcut",
+      "url": "https://qr.vishakh.fun",
+      "description": "Quick access to QR code generation"
     }
   ]
 }
