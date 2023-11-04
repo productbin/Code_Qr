@@ -34,18 +34,21 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     const dataURL = qrCodeImage.src;
+    const imageUrl = dataURL;
 
-    // Create a hidden anchor element
-    const a = document.createElement("a");
-    a.href = dataURL;
-    a.download = "qr-code.png"; // You can set the filename as you like
+    fetch(imageUrl)
+      .then((response) => response.blob())
+      .then((blob) => {
+        const url = window.URL.createObjectURL(blob);
 
-    // Trigger a click event to prompt the download
-    a.style.display = "none";
-    document.body.appendChild(a);
-    a.click();
-
-    // Clean up the anchor element
-    document.body.removeChild(a);
+        // Create a download link for the QR code image
+        const a = document.createElement("a");
+        a.href = url;
+        a.download = "qr-code.png"; // You can set the filename as you like
+        a.style.display = "none";
+        document.body.appendChild(a);
+        a.click();
+        window.URL.revokeObjectURL(url);
+      });
   });
 });
