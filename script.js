@@ -2,8 +2,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const generateButton = document.getElementById("generate-qr");
   const qrDataInput = document.getElementById("qr-data");
   const qrcode = new QRCode(document.getElementById("qrcode"), {
-    width: 128,
-    height: 128,
+    width: 300,
+    height: 300,
   });
 
   generateButton.addEventListener("click", function () {
