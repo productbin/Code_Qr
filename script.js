@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Create a download link for the QR code image
     const a = document.createElement("a");
     a.href = url;
-    a.download = "qr-code.png"; // You can set the filename as you like
+    a.download = "QR_code.png"; // You can set the filename as you like
     a.style.display = "none";
     document.body.appendChild(a);
     a.click();
