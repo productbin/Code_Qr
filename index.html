@@ -11,17 +11,26 @@
     <title>QR Code Generator</title>
   </head>
   <body>
-    <header>
-      <h1>QR Code Generator</h1>
-    </header>
-    <main>
-      <div class="container">
-        <label for="qr-data">Enter data:</label>
-        <input type="text" id="qr-data" placeholder="Enter text or URL" />
-        <button id="generate-qr">Generate QR Code</button>
-        <div id="qrcode"></div>
+    <div class="container">
+      <div class="col-sm-6 col-md-3">
+        <div class="movie--isloading">
+          <div id="qrcode" class="loading-image"></div>
+          <div class="loading-content">
+            <div class="loading-text-container">
+              <div class="loading-main-text"></div>
+            </div>
+            <div class="loading-btn"></div>
+          </div>
+        </div>
       </div>
-    </main>
+      <div class="input-group">
+        <label for="qr-data" class="label">Enter the Data</label>
+        <input id="qr-data" autocomplete="off" type="text" class="input" />
+        <div></div>
+      </div>
+      <button id="generate-qr" class="btn">Generate</button>
+    </div>
+
     <script src="qrcode.min.js"></script>
     <script src="script.js"></script>
     <script src="service-worker.js"></script>
