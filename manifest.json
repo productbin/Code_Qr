@@ -5,7 +5,7 @@
   "short_name": "QRGen",
   "start_url": "/",
   "display": "standalone",
-  "description": "Generate QR codes easily",
+  "description": "Effortlessly create QR codes for websites, text, and more with our user-friendly QR Code Generator. Instantly share information, simplify marketing, and connect with a simple scan. Get started today!",
   "lang": "en",
   "dir": "auto",
   "theme_color": "#000000",
@@ -13,13 +13,13 @@
   "orientation": "any",
   "icons": [
     {
-      "src": "https://www.pwabuilder.com/assets/icons/icon_512.png",
+      "src": "./assets/icon.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"
     },
     {
-      "src": "https://www.pwabuilder.com/assets/icons/icon_192.png",
+      "src": "./assets/favicon.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any"
@@ -27,7 +27,7 @@
   ],
   "screenshots": [
     {
-      "src": "https://www.pwabuilder.com/assets/screenshots/screen1.png",
+      "src": "./assets/banner2.png",
       "sizes": "2880x1800",
       "type": "image/png",
       "description": "A screenshot of the home page"
@@ -36,15 +36,15 @@
   "related_applications": [
     {
       "platform": "windows",
-      "url": "https://www.pwabuilder.com/"
+      "url": "https://qr.vishakh.fun"
     }
   ],
   "prefer_related_applications": false,
   "shortcuts": [
     {
-      "name": "QRGen Shortcut",
+      "name": "QRGen",
       "url": "/",
-      "description": "Quick access to QR code generation"
+      "description": "Effortlessly create QR codes for websites, text, and more with our user-friendly QR Code Generator. Instantly share information, simplify marketing, and connect with a simple scan. Get started today!"
     }
   ]
 }

@@ -7,6 +7,7 @@ self.addEventListener("install", (event) => {
         // Add the URLs of the essential resources you want to cache here
         "/index.html",
         "/qrcode.min.js",
+        "/script.js",
         "/styles.css",
         // Add more resources as needed
       ]);
