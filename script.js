@@ -5,20 +5,10 @@ const qrCode = new QRCode(document.getElementById("qr-code"), {
   height: 300,
 });
 
-const textInput = document.getElementById("text-input");
-
-textInput.addEventListener("input", () => {
-  if (textInput.value.trim() !== "") {
-    generateButton.disabled = false;
-  } else {
-    generateButton.disabled = true;
-  }
-});
-
 generateButton.addEventListener("click", () => {
-  const text = textInput.value.trim();
+  const textInput = document.getElementById("text-input").value;
   qrCode.clear();
-  qrCode.makeCode(text);
+  qrCode.makeCode(textInput);
   downloadButton.style.display = "block";
 });
 
