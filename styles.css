@@ -212,3 +212,9 @@ body {
 .btn:active {
   background-color: #87dbd0;
 }
+
+.warning {
+  color: lightcoral;
+  font-size: 0.9rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
