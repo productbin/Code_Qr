@@ -218,3 +218,9 @@ body {
   font-size: 0.9rem;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
+
+.social {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
