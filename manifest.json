@@ -8,8 +8,8 @@
   "description": "Effortlessly create QR codes for websites, text, and more with our user-friendly QR Code Generator. Instantly share information, simplify marketing, and connect with a simple scan. Get started today!",
   "lang": "en",
   "dir": "auto",
-  "theme_color": "#000000",
-  "background_color": "#000000",
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff",
   "orientation": "any",
   "icons": [
     {
