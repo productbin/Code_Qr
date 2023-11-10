@@ -1,8 +1,8 @@
 {
   "display_override": ["window-controls-overlay"],
   "protocol_handlers": [{ "protocol": "mailto", "url": "/newEmail?to=%s" }],
-  "name": "Qrgen",
-  "short_name": "QRGen",
+  "name": "SnapLinker",
+  "short_name": "SnapLinker",
   "start_url": "/",
   "display": "standalone",
   "description": "Effortlessly create QR codes for websites, text, and more with our user-friendly QR Code Generator. Instantly share information, simplify marketing, and connect with a simple scan. Get started today!",
@@ -42,7 +42,7 @@
   "prefer_related_applications": false,
   "shortcuts": [
     {
-      "name": "QRGen",
+      "name": "SnapLinker",
       "url": "/",
       "description": "Effortlessly create QR codes for websites, text, and more with our user-friendly QR Code Generator. Instantly share information, simplify marketing, and connect with a simple scan. Get started today!"
     }

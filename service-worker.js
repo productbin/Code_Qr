@@ -1,4 +1,4 @@
-const CACHE_NAME = "qrgen-cache-v1";
+const CACHE_NAME = "SnapLinker-cache-v1";
 
 self.addEventListener("install", (event) => {
   event.waitUntil(
